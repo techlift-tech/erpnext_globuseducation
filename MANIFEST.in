@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include globuseducation *.css
+recursive-include globuseducation *.csv
+recursive-include globuseducation *.html
+recursive-include globuseducation *.ico
+recursive-include globuseducation *.js
+recursive-include globuseducation *.json
+recursive-include globuseducation *.md
+recursive-include globuseducation *.png
+recursive-include globuseducation *.py
+recursive-include globuseducation *.svg
+recursive-include globuseducation *.txt
+recursive-exclude globuseducation *.pyc

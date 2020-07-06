@@ -1,0 +1,28 @@
+<footer>
+	<div class="container-fluid text-center-mob">
+		<div class="row">
+			{% if footer_items -%}
+			{% include "templates/includes/footer/footer_items.html" %}
+			{% endif %}
+			{% if footer_address %}
+			<div class="col-12 col-md-3">
+				<h5>GET IN TOUCH</h5>
+				{{ footer_address }}
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</footer>
+
+<div class="copyright">
+	<div class="container">
+		<div class="row text-mob-center">
+			{% if copyright %}
+			<div class="col-12 col-md-9">
+				{{ copyright }}
+			</div>
+			{% endif %}
+			<div class="col-12 col-md-3">Powered by <a target="_blank" href="https://techlift.in">Techlift</a></div>
+		</div>
+	</div>
+</div>

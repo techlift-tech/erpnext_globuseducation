@@ -1,0 +1,18 @@
+{% if not no_breadcrumbs and parents %}
+<section id="bread-crumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 pl-4">
+				<!-- Home > <a href="#">Inner</a> -->
+				{%- set parents = parents[-3:] %}
+				{% for parent in parents %}
+				<a href="{{ url_prefix }}{{ parent.route | abs_url }}" itemprop="url">
+					{{ parent.title or parent.label or parent.name or "" }}
+				</a> :: 
+				{% endfor %}
+				{{ title or "" }}
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}
